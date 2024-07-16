@@ -1,0 +1,57 @@
+.user-chat-container{
+    width: calc(100% - 20rem);
+    min-width: 300px;
+    height: fit-content;
+    min-height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: antiquewhite;
+    
+}
+
+.user-chat-container > .messages-container {
+    position: absolute;
+    height: calc( 100% - 3rem);
+    width: 100%;
+    background-color: rgb(187, 203, 203);
+    display: flex;
+    flex-direction: column;
+
+}
+.user-chat-container > .messages-container > .message-section {
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: flex;
+}
+
+.user-chat-container > .messages-container > .message-section > p {
+    padding-inline: 1rem;
+    width: fit-content;
+    max-width: 60%;
+    display: inline;
+}
+
+.current-user {
+    flex-direction: row-reverse;
+}
+
+.other-user {
+    flex-direction: row;
+}
+
+
+.user-chat-container > .send-message-container{
+    position: fixed;
+    bottom: 0;
+    min-height: 3rem;
+    width: 100%;
+    background-color: azure;
+}
+
+.send-message-container > form > textarea{
+    position: relative;
+    width: calc(100% - 25rem) ;
+    resize: none;
+}
+

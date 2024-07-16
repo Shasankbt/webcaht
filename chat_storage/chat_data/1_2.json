@@ -1,0 +1,34 @@
+{
+    "messages": {
+        "data": [
+            {
+                "timestamp": 1720243236817,
+                "id": "1",
+                "message": "hello",
+                "type": "normal"
+            },
+            {
+                "timestamp": 1720243247881,
+                "id": "2",
+                "message": "wola",
+                "type": "normal"
+            },
+            {
+                "timestamp": 1720245535670,
+                "id": "1",
+                "message": "how are you ?",
+                "type": "normal"
+            },
+            {
+                "id": "1",
+                "timestamp": 1721108800502,
+                "message": "im fine "
+            }
+        ],
+        "sync": 1721108800502
+    },
+    "deleted-messages": {
+        "data": [],
+        "sync": 0
+    }
+}

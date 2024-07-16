@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="user-chat-container">
+        <div class="messages-container">
+            <div class="message-section current-user">
+                <p>hellooooooooooooooooooooo ooooooooooo oooo oooo ooooo ooooooooo </p>
+            </div>
+            <div class="message-section other-user">
+                <p>hiya</p>
+            </div>
+            <template message-box>
+                <div class="message-section current-user">
+                    <p></p>
+                </div>
+            </template>
+        </div>
+        <div class="send-message-container">
+            <form>
+                <textarea id="message" rows="" required></textarea>
+                <button id="send-msg-button">submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/loadchat.js" type="module"></script>
+    <script src="/scripts/sendmessage.js" type="module"></script>
+    <script>
+        window.addEventListener('keydown', (event) => {
+            if (event.ctrlKey && event.shiftKey && event.code === 'KeyR')
+                localStorage.clear();
+            if (event.shiftKey && event.code === 'KeyR'){
+                console.log("resetting local data")
+                localStorage.clear();
+            }
+                
+        });
+    </script>
+</body>
